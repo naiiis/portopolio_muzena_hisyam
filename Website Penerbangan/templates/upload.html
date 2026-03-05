@@ -69,7 +69,7 @@
     </style>
 </head>
 <body>
-    <h2>📤 Upload Dataset Planning / Realisasi (Excel)</h2>
+    <h2>Upload Dataset Planning / Realisasi (Excel)</h2>
 
     <!-- Flash message -->
     {% with messages = get_flashed_messages() %}
@@ -97,7 +97,7 @@
     </form>
 
     {% if files %}
-    <h2>📦 Daftar File yang Sudah Diupload</h2>
+    <h2>Daftar File yang Sudah Diupload</h2>
     <table>
         <tr>
             <th>Nama File</th>
@@ -112,7 +112,7 @@
             <td>{{ ftype.capitalize() }}</td>
             <td>
                 <form class="delete-form" method="POST" action="{{ url_for('delete_file', file_id=fid) }}" onsubmit="return confirm('Yakin ingin menghapus file ini beserta datanya?')">
-                    <button class="delete-btn" type="submit">🗑️ Hapus</button>
+                    <button class="delete-btn" type="submit">Hapus</button>
                 </form>
             </td>
         </tr>
