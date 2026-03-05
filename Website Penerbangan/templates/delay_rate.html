@@ -41,7 +41,7 @@
   <form method="get">
     <label><b>Bulan:</b></label>
     <select name="bulan" onchange="this.form.submit()">
-      <option value="">-- Semua Bulan --</option>
+      <option value="">Semua Bulan</option>
       {% for b in available_months %}
         <option value="{{ b }}" {% if b == selected_month %}selected{% endif %}>{{ b }}</option>
       {% endfor %}
